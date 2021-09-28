@@ -9,6 +9,9 @@ listaAlunos = [] ##lista
 valdir = {"nome":"Valdir Augusto de Carvalho", "idade":18, "corFavorita":"Verde"}
 andreSantana = {"nome":"André Luiz Maciel Santana", "idade":30, "corFavorita":"Rosa"}
 
+# Atualizando o valor de uma chave
+valdir["nome"] = "Valdir A. Carvalho"
+
 # Exibindo o conteúdo de um dicionário
 print("\nColeção Valdir:", valdir)
 
@@ -30,3 +33,9 @@ turma221 = { "141414": {"nome": "André Santana", "mediaFinal": 9.0}, "101010": 
 
 print(turma221["141414"]["nome"])
 print(turma221["101010"]["nome"])
+
+#Verificando se uma chave existe em um dicionário
+# Como temos "141414" a resposta para o teste será True
+# No caso de 99999 será false
+print("141414" in turma221)
+print("99999" in turma221)
