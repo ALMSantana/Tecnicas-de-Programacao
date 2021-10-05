@@ -85,4 +85,3 @@ for umaPedra in listaPedrasPreciosas:
 
 
 
-
