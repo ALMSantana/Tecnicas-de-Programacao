@@ -21,7 +21,7 @@ def main():
         alunoTemp = criarAluno()
         listaAlunos.append(alunoTemp)
         contador = contador + 1
-    
+        
     mostrarNomesAlunos(listaAlunos)
 
 if(__name__ == "__main__"):
