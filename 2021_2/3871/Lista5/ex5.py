@@ -2,10 +2,6 @@
 # funções que permitirão (i) cadastrar notas dos alunos (ii) exibir todas as notas (iii) calcular a média das 
 # notas, retornando o valor da média e (iv) exiba a média.
 
-listaExemplo = [1,2,3,4,5]
-
-print(sum(listaExemplo))
-
 def solicitarNotaAluno():
     nota = float(input("Digite o valor da nota do aluno: "))
     return nota

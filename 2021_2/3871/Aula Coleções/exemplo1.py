@@ -13,14 +13,22 @@ def exibirNomesAlunosLista(listaAlunos : list):
     for umAluno in listaAlunos:
         print(umAluno["nome"])
 
+def desenharMenu():
+    print("0 - para sair")
+    print("1 - Cadastrar um usuário")
+    print("2 - Exibir todos os usuário")
+
 def main():
     listaAlunos = []
     
-    listaAlunos.append(criarAluno())
-    listaAlunos.append(criarAluno())
-    listaAlunos.append(criarAluno())
+    desenharMenu()
+    opcao = int(input("Digite a opcao desejada: "))
 
-    exibirNomesAlunosLista(listaAlunos)
+    while(opcao != 0):
+        if(opcao == 1):
+            listaAlunos.append(criarAluno())
+        elif(opcao == 2):
+            exibirNomesAlunosLista(listaAlunos)
 
 if __name__ == "__main__":
     main()
