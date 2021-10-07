@@ -6,6 +6,12 @@ def mostrarCidades(listaCidades):
     for umaCidade in listaCidades:
         print(umaCidade)
 
+
+def mostrarCidadesComMais7Letras(listaCidades):
+    for umaCidade in listaCidades:
+        if(len(umaCidade) > 7):
+            print(umaCidade)
+
 def adicionarCidadeLista(listaCidades):
     cidade = input("Informe o nome da cidade que você deseja adicionar na coleção: ")
     listaCidades.append(cidade)
@@ -22,7 +28,7 @@ def main():
     while(qtdCidades != len(listaCidades)):
         adicionarCidadeLista(listaCidades)
 
-    mostrarCidades(listaCidades)
+    mostrarCidadesComMais7Letras(listaCidades)
 
 if __name__ == "__main__":
     main()
