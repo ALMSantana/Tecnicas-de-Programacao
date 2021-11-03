@@ -36,6 +36,7 @@ def exibirRestultado(salaAtual, qtdInteracoes):
     else:
         print("Você utilizou {} interações, desta forma perdeu!".format(qtdInteracoes))
 
+
 def game():
     salaAtual = 1
     qtdInteracoes = 0
